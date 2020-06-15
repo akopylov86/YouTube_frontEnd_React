@@ -1,5 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  margin: 0;
+  margin: 0 ;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +14,70 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  padding: 0 5em;
+}
+
+.search_form {
+  width: 35%;
+}
+.search_block {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.player_container{
+  display: flex;
+  overflow: auto;
+  width: 100%;
+  height: 30em;
+  padding: 1em;
+  border: 1px solid slategrey;
+  margin: 0 auto;
+}
+
+.player {
+  flex: 3 0 auto;
+
+}
+
+.player_emb {
+  margin: 0 1em ;
+  width: 95%;
+  height: 90%;
+}
+
+.video_list {
+  flex: 1 0 auto;
+  text-align: left;
+}
+
+
+.video_list_title {
+  font-size: 10px;
+}
+
+.list_item_img {
+  max-width: 60px;
+  max-height: 60px;
+}
+
+.list_item {
+  display: flex;
+}
+
+.list_item:hover {
+  border: 1px solid lightslategrey;
+
+}
+
+.list_item_title {
+  white-space: pre;
+  word-wrap: break-spaces;
 }
